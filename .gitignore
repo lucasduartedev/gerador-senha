@@ -1,0 +1,39 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.env
+.env.local
+.env.*.local
+
+# Compilação TypeScript
+dist/**/*.js
+#build/
+#out/
+
+# Arquivos temporários
+*.log
+*.tmp
+*.temp
+*.bak
+*.swp
+.DS_Store
+Thumbs.db
+
+# Testes / cobertura
+coverage/
+.jasmine/
+.nyc_output/
+
+# Arquivos gerados pelo Jasmine (caso tenha relatórios)
+spec/reports/
+
+# IDEs e editores
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln

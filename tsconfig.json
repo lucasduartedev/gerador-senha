@@ -1,8 +1,10 @@
 {
-    "compilerOptions": {
-        "target": "ES2022",
-        "outDir": "./dist/js/",
-        "noEmitOnError": true
-    },
-    "include": ["./src/**/*"]
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "rootDir": "src",
+    "outDir": "dist/js",
+    "strict": true,
+    "esModuleInterop": true
+  }
 }
