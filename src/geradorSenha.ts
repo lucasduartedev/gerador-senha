@@ -25,6 +25,3 @@ export function gerarSenha(tamanho: number, incluirMinusculas: boolean, incluirM
     return senha;
 
 }
-
-// Exemplo de uso
-// console.log(gerarSenha(10, true, true, true, true));
