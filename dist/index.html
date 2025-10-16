@@ -5,36 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador de Senhas</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
 <body>
 
-    <header>
-        <h1 class="titulo">Gerador de senhas</h1>
+    <header class="titulo">
+        <h1 class="titulo__principal">Gerador de senhas</h1>
     </header>
 
     <div class="container">
         <form class="form-gerar-senha">
             <input type="checkbox" id="alfa-minusculo" checked>
-            <label for="alfa-minusculo">Alfabeto (minúsculo)</label><br/>
+            <label for="alfa-minusculo">Alfabeto (minúsculo): <span class="label-desc">abcdef...</span></label><br>
 
             <input type="checkbox" id="alfa-maiusculo">
-            <label for="alfa-minusculo">Alfabeto (maiúsculo)</label><br>
+            <label for="alfa-minusculo">Alfabeto (maiúsculo): <span class="label-desc">ABCDEF...</span></label><br>
 
             <input type="checkbox" id="numeros">
-            <label for="numeros">Números</label><br>
+            <label for="numeros">Números: <span class="label-desc">1234567890</span></label><br>
 
             <input type="checkbox" id="simbolos">
-            <label for="simbolos">Símbolos</label><br>
+            <label for="simbolos">Símbolos: <span class="label-desc">!@#$%^&...</span></label><br>
 
-            <label for="quantidade">Quantidade:</label>
-            <input type="number" id="quantidade" min="0" max="32" value="8"><br>
+            <label for="quantidade">Tamanho da senha:</label>
+            <input type="number" id="quantidade" min="0" max="32" value="8" class="caixa-texto quantiadde"><br>
             
-            <label for="resultado">Resultado:</label>
-            <input type="text" id="resultado"><br>
+            <label for="resultado" class="resultado">Resultado:</label>
+            <input type="text" id="resultado" class="caixa-texto resultado"><br>
             
-            <input type="button" value="Gerar" id="btn-gerar"><br>
+            <input type="button" value="Gerar" id="btn-gerar" class="btn-gerar-senha"><br>
         </form>
     </div>
 

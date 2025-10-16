@@ -1,0 +1,43 @@
+:root {
+    --font: "Poppins", sans-serif;
+    --cinza: #9c9898;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 1.5em 2em;
+    font-family: var(--font);
+}
+
+body, input {
+    font-weight: 400;
+}
+
+.titulo {
+    text-decoration: overline;
+}
+
+.label-desc {
+    font-weight: 700;
+    color: var(--cinza)
+}
+
+.caixa-texto {
+    font-weight: 700;
+    font-size: 1em;
+    text-align: center;
+}
+
+.resultado {
+    font-weight: 600;
+}
+
+.btn-gerar-senha {
+    font-weight: 650;
+    text-transform: uppercase;
+    padding: 0.2em 1em;
+}
