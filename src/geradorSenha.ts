@@ -1,7 +1,15 @@
 
 export function gerarSenha(tamanho: number, incluirMinusculas: boolean, incluirMaiusculas: boolean, incluirNumeros: boolean, incluirSimbolos: boolean): string {
-    // * Validar o tamanho da senha | 8 = padrão
-    if (tamanho <= 0 || tamanho > 32) tamanho = 8;
+    
+    // * Verificar tamanho informado | 8 = padrão
+    if ((tamanho <= 0 || tamanho > 32) || isNaN(tamanho)) {
+        tamanho = 8;
+    }
+
+    // * Verificar se usuário não selecionou opções
+    if ((!incluirMinusculas && !incluirMaiusculas) && (!incluirNumeros && !incluirSimbolos)) {
+        incluirMinusculas = true;
+    }
 
     // * Conjuntos de caracteres disponíveis
     const alfabetoMinusculo = 'abcdefghijklmnopqrstuvwxyz';

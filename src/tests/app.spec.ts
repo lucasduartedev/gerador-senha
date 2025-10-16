@@ -1,5 +1,5 @@
 
-import Calculadora from "../app";
+import Calculadora from "../app.js";
 
 let calc = new Calculadora();
 
