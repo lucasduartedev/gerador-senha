@@ -16,10 +16,6 @@ btnGerarSenha?.addEventListener('click', () => {
     const usarNumeros = caixaNumeros.checked;
     const usarSimbolos = caixaSimbolos.checked;
     let quantidade = parseInt(caixaQuantidade.value);
-    
-    // if (isNaN(quantidade)) {
-    //     quantidade = 8;
-    // }
 
     // console.log({ quantidade, usarMinusculos, usarMaiusculas, usarNumeros, usarSimbolos });
 

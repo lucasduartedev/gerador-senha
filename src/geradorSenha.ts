@@ -1,9 +1,11 @@
 
+import {tamanhoPadrao, alfabetoMinusculo, numeros, simbolos} from './conjuntoCaracteres.js'
+
 export function gerarSenha(tamanho: number, incluirMinusculas: boolean, incluirMaiusculas: boolean, incluirNumeros: boolean, incluirSimbolos: boolean): string {
     
     // * Verificar tamanho informado | 8 = padrão
-    if ((tamanho <= 0 || tamanho > 32) || isNaN(tamanho)) {
-        tamanho = 8;
+    if ((tamanho < 1 || tamanho > 32) || isNaN(tamanho)) {
+        tamanho = tamanhoPadrao;
     }
 
     // * Verificar se usuário não selecionou opções
@@ -12,11 +14,8 @@ export function gerarSenha(tamanho: number, incluirMinusculas: boolean, incluirM
     }
 
     // * Conjuntos de caracteres disponíveis
-    const alfabetoMinusculo = 'abcdefghijklmnopqrstuvwxyz';
-    const numeros = '0123456789';
-    const simbolos = '!@#$%^&*()_+[]{}|;:,.<>?';
     let caracteres = '';
-
+    
     // * Verificar quais conjuntos de caracteres incluir
     if (incluirMinusculas) {caracteres += alfabetoMinusculo;}
     if (incluirMaiusculas) {caracteres += alfabetoMinusculo.toUpperCase();}
