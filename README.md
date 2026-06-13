@@ -41,7 +41,7 @@ Aplicação simples para gerar senhas aleatórias a partir de critérios escolhi
 
 ## Imagem do projeto
 
-<img src="../img-projeto/img-projeto.png" alt="Imagem final do projeto" class="imagem-fundo">
+<img src="./img-projeto/img-projeto.png" alt="Imagem final do projeto" class="imagem-fundo">
 
 ## Como Executar
 
