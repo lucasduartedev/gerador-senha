@@ -1,6 +1,8 @@
 :root {
     --font: "Poppins", sans-serif;
     --cinza: #9c9898;
+    --cinza-escuro: #5c5c5c;
+    --preto: #000;
 }
 
 * {
@@ -12,6 +14,12 @@ body {
     margin: 1.5em 2em;
     font-family: var(--font);
     font-size: 14px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+
 }
 
 body, input {
@@ -20,6 +28,7 @@ body, input {
 
 .titulo {
     text-decoration: overline;
+    margin-bottom: 1em;
 }
 
 .label-desc {
@@ -41,4 +50,25 @@ body, input {
     font-weight: 650;
     text-transform: uppercase;
     padding: 0.2em 1em;
+}
+
+.form-botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-gerar {
+    background-color: var(--cinza-escuro);
+    color: #fff;
+    border: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+    margin: 1em 0;
+    padding: 0.5em 1.5em;
+}
+
+#btn-gerar:hover {
+    background-color: var(--cinza);
+    transition: 0.3s;
 }

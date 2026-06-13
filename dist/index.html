@@ -14,32 +14,39 @@
 </head>
 <body>
 
-    <header class="titulo">
-        <h1 class="titulo__principal">Gerador de senhas</h1>
-    </header>
+    <div class="app">
 
-    <div class="container">
-        <form class="form-gerar-senha">
-            <input type="checkbox" id="alfa-minusculo" checked>
-            <label for="alfa-minusculo">Alfabeto (minúsculo): <span class="label-desc">abcdef...</span></label><br>
+        <header class="titulo">
+            <h1 class="titulo__principal">Gerador de senhas</h1>
+        </header>
 
-            <input type="checkbox" id="alfa-maiusculo">
-            <label for="alfa-minusculo">Alfabeto (maiúsculo): <span class="label-desc">ABCDEF...</span></label><br>
+        <div class="container">
+            <form class="form-gerar-senha">
+                <input type="checkbox" id="alfa-minusculo" checked>
+                <label for="alfa-minusculo">Alfabeto (minúsculo): <span class="label-desc">abcdef...</span></label><br>
 
-            <input type="checkbox" id="numeros">
-            <label for="numeros">Números: <span class="label-desc">1234567890</span></label><br>
+                <input type="checkbox" id="alfa-maiusculo">
+                <label for="alfa-minusculo">Alfabeto (maiúsculo): <span class="label-desc">ABCDEF...</span></label><br>
 
-            <input type="checkbox" id="simbolos">
-            <label for="simbolos">Símbolos: <span class="label-desc">!@#$%^&...</span></label><br>
+                <input type="checkbox" id="numeros">
+                <label for="numeros">Números: <span class="label-desc">1234567890</span></label><br>
 
-            <label for="quantidade">Tamanho da senha:</label>
-            <input type="number" id="quantidade" min="0" max="32" value="8" class="caixa-texto quantiadde"><br>
-            
-            <label for="resultado" class="resultado">Resultado:</label>
-            <input type="text" id="resultado" class="caixa-texto resultado"><br>
-            
-            <input type="button" value="Gerar" id="btn-gerar" class="btn-gerar-senha"><br>
-        </form>
+                <input type="checkbox" id="simbolos">
+                <label for="simbolos">Símbolos: <span class="label-desc">!@#$%^&...</span></label><br>
+
+                <label for="quantidade">Tamanho da senha:</label>
+                <input type="number" id="quantidade" min="0" max="32" value="8" class="caixa-texto quantiadde"><br>
+                
+                <br>
+                
+                <label for="resultado" class="resultado">Resultado:</label>
+                <input type="text" id="resultado" class="caixa-texto resultado"><br>
+                
+                <div class="form-botao">
+                    <input type="button" value="Gerar" id="btn-gerar" class="btn-gerar-senha"><br>
+                </div>
+            </form>
+        </div>
     </div>
 
     <script type="module" src="./js/index.js"></script>
